@@ -1,0 +1,34 @@
+
+{{>partials/header}}
+
+	<main>
+		<section>
+			<h2>Raças de Cachorros</h2>
+			<ul>
+				{{#racas}}
+				  <li>{{nome}} <----------------> {{porte}}</li>
+        {{/racas}}
+        {{^racas}}
+          <p>Não há raças para mostrar</p>
+        {{/racas}}
+			</ul>
+		</section>
+		<section>
+			<h2>Cuidados com Cachorros</h2>
+			<p>Os cachorros precisam de alimentação adequada, exercícios físicos regulares, banhos e cuidados com a higiene e também visitas regulares ao veterinário.</p>
+		</section>
+		<section>
+			<h2>Contato</h2>
+			<form>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem" required></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+
+{{>partials/footer}}

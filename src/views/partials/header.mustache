@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Site de Cachorros</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <h1>{{titlePage}}</h1>
+  <hr>
+
+	<header>
+		<h1>Meu Site de Cachorros</h1>
+		<nav>
+			<ul>
+				{{#menu}}
+          <li><a href="#">{{.}}</a></li>
+        {{/menu}}
+			</ul>
+		</nav>
+	</header>
